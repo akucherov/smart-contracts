@@ -3,7 +3,7 @@ pragma solidity ^0.4.11;
 contract RNG {
     mapping(uint256 => uint8) rng;
     uint256 public lastIndex = 0;
-    mapping(uint256 => uint256) request;
+    mapping(uint256 => uint256) public request;
     uint256 lastRequest = 0;
     address public owner;
 
