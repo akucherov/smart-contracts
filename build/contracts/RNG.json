@@ -1,0 +1,135 @@
+{
+  "contract_name": "RNG",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "numbers",
+          "type": "uint8[]"
+        }
+      ],
+      "name": "updateRNG",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "from",
+          "type": "uint256"
+        },
+        {
+          "name": "to",
+          "type": "uint256"
+        }
+      ],
+      "name": "getNumbers",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint8[]"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "count",
+          "type": "uint256"
+        }
+      ],
+      "name": "donate",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "lastIndex",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "req",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "count",
+          "type": "uint256"
+        }
+      ],
+      "name": "Request",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x606060405260006001556000600355341561001957600080fd5b5b60048054600160a060020a03191633600160a060020a03161790555b5b6103d7806100466000396000f300606060405263ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416638da5cb5b8114610069578063d1b14dca146100a5578063e162bed1146100f6578063f14faf6f14610163578063f3f6f0d71461018d575b600080fd5b341561007457600080fd5b61007c6101b2565b60405173ffffffffffffffffffffffffffffffffffffffff909116815260200160405180910390f35b34156100b057600080fd5b6100f460046024813581810190830135806020818102016040519081016040528093929190818152602001838360200280828437509496506101ce95505050505050565b005b341561010157600080fd5b61010f60043560243561025d565b60405160208082528190810183818151815260200191508051906020019060200280838360005b8381101561014f5780820151818401525b602001610136565b505050509050019250505060405180910390f35b341561016e57600080fd5b610179600435610324565b604051901515815260200160405180910390f35b341561019857600080fd5b6101a0610393565b60405190815260200160405180910390f35b60045473ffffffffffffffffffffffffffffffffffffffff1681565b6004546000903373ffffffffffffffffffffffffffffffffffffffff9081169116146101f957600080fd5b5060005b815181101561024c5781818151811061021257fe5b90602001906020020151600180548301016000908152602081905260409020805460ff191660ff929092169190911790555b6001016101fd565b81516001805490910190555b5b5050565b610265610399565b61026d610399565b60008085101561027c57600080fd5b8385111561028957600080fd5b6000858503101561029957600080fd5b6001548411156102a857600080fd5b8484036001016040518059106102bb5750595b908082528060200260200182016040525b509150600090505b81518110156103185784810160009081526020819052604090205460ff168282815181106102fe57fe5b60ff9092166020928302909101909101525b6001016102d4565b8192505b505092915050565b600080821161033257600080fd5b600380546001810182556000908152600260205260409081902084905590547f7132d531fb7499d8670587fd36238dd707477c7527e7da2684e8d0b2a5096a6c9184905191825260208201526040908101905180910390a15060015b919050565b60015481565b602060405190810160405260008152905600a165627a7a72305820400d96bddac518faa239e0cf8bf30fd6c8e11d0826bf2b25aef46f5da80955400029",
+  "networks": {
+    "1503034238722": {
+      "events": {
+        "0x7132d531fb7499d8670587fd36238dd707477c7527e7da2684e8d0b2a5096a6c": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "req",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "count",
+              "type": "uint256"
+            }
+          ],
+          "name": "Request",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xc29d7bdf416fef8226d7d201e3f20dd5730f06d4",
+      "updated_at": 1503034256639
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1503034256639
+}
